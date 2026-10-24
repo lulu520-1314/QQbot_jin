@@ -1,0 +1,20 @@
+# DeepSeek Harness 插件配置示例（复制到 profiles/desktop/cordis.patch.yml 后按注释修改）
+# 注意：真实的 token/QQ 号请勿提交到公开仓库。
+
+- id: dsh-onebot
+  # OneBot v11 接入：NapCat 反向 WebSocket 连到 DSH
+  config:
+    mode: reverse                 # reverse=NapCat 主动连（推荐）；forward=DSH 主动连 NapCat
+    port: 8643                    # DSH 监听的 WS 端口，NapCat 里填 ws://127.0.0.1:8643
+    token: "<你的OneBotToken>"     # 和 NapCat 的 token 保持一致（复杂随机串）
+    botQQ: "<小号QQ号>"            # 机器人自己的 QQ 号（小号）
+    admin: "<管理员QQ号>"          # 管理员（你本人），管理命令只对他生效
+    requireMention: false         # 群里是否需要 @ 才回复
+    rateLimitPerMinute: 15        # 每分钟最多回复条数（防刷屏）
+    newMessagePolicy: steer       # 新消息打断策略：steer=补充指令 / queue=排队
+    queueNoticeAfter: 0
+    autoSteerPolicy: all
+    dmPolicy: allowlist           # 私聊白名单策略
+    workspacePath: "D:\\software\\QQBot\\workspace"   # 机器人的工作区（人格/表情/语音都在这）
+    # 可选：模型显示名
+    # modelDisplayNames: {}
