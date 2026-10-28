@@ -1,0 +1,21 @@
+[
+  {
+    "id": "news_daily",
+    "enabled": false,
+    "time": "19:00",
+    "days": [],
+    "script": "news_push.py",
+    "targets": []
+  },
+  {
+    "id": "demo_morning",
+    "enabled": false,
+    "time": "08:30",
+    "days": [1, 2, 3, 4, 5],
+    "targets": [
+      { "type": "group", "id": "<群号>" },
+      { "type": "private", "id": "<QQ号>" }
+    ],
+    "text": "早上好呀，该起床啦～"
+  }
+]

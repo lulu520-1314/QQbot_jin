@@ -1,0 +1,30 @@
+{
+  "voice": {
+    "mode_speed": {
+      "daily": 1.02,
+      "tsundere": 1.12,
+      "warm": 1.0
+    },
+    "emotions": {
+      "normal": { "speed": 1.02, "presence": 2.5, "pitch": 0 },
+      "sweet": { "speed": 1.0, "presence": 3.0, "pitch": 1 },
+      "gentle": { "speed": 0.92, "presence": 2.0, "pitch": -2 },
+      "sad": { "speed": 0.9, "presence": 1.5, "pitch": -2 },
+      "tsundere": { "speed": 1.12, "presence": 3.5, "pitch": 1 },
+      "excited": { "speed": 1.2, "presence": 3.0, "pitch": 2 }
+    }
+  },
+  "cover": {
+    "targetHz": 290.0,
+    "pitchMin": -2,
+    "pitchMax": 6,
+    "protect": 0.35,
+    "indexRate": 0.5,
+    "vocalVol": 1.2,
+    "instVol": 0.75,
+    "loudnessI": -14.0
+  },
+  "modelGain": {
+    "温柔男模.pth": 1.08
+  }
+}

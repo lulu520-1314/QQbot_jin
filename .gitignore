@@ -1,0 +1,23 @@
+# 隐私/本地配置（不要提交）
+configs/cordis.patch.yml
+configs/AGENTS.md
+曲库目录.txt
+rvc_model.txt
+*.token
+*.key
+refs/
+models/
+workspace/
+voice/
+cover_out/
+media/
+__pycache__/
+*.pyc
+*.log
+*.wav
+*.mp3
+*.pth
+*.index
+*.ckpt
+.DS_Store
+Thumbs.db

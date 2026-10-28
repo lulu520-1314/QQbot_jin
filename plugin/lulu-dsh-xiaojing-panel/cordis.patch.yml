@@ -1,0 +1,4 @@
+# lulu-dsh-xiaojing-panel 的 bundle patch（随包加载）（DSH 只在 profile 里登记一次，见 package.json 的 dsh.profile.bundles）
+- insert:
+    - id: lulu-dsh-xiaojing-panel
+      name: 'lulu-dsh-xiaojing-panel'
